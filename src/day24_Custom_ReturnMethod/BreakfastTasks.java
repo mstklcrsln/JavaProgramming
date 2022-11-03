@@ -19,6 +19,7 @@ public class BreakfastTasks {
 
         System.out.println("------------------");
         nameOfMonths(8); //Months name = Aug
+        daysOfWeek(5); //day = Fri
     }
     // 1. Create a method that can display the initials of the person
         public static void initialsOfPerson (String name, String surname){
@@ -50,6 +51,15 @@ public class BreakfastTasks {
 
     //4. Create a method that can print the name of the day based on the given number to the method
 
+    public static void daysOfWeek (int dayNumber) {
+        String day= "";
+        if (dayNumber>=1 && dayNumber<=7){
+            day = (dayNumber==1)? "Monday": (dayNumber==2)? "Tuesday":(dayNumber==3)? "Wednesday":(dayNumber==4)? "Thurs":(dayNumber==5)? "Fri":(dayNumber==6)? "Saturday": "Monday";
+        }else {
+            day= "invalid";
+        }
+        System.out.println("day = " + day);
+    }
 
 
     //5. Create a method that can print how many days a month has
