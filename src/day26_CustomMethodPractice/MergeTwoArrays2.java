@@ -12,6 +12,14 @@ public class MergeTwoArrays2 {
         int [] newArray= {};
         newArray= ArraysUtility.merge(arr1,arr2);
         System.out.println(Arrays.toString(newArray)); //[1, 2, 3, 4, 5, 6, 7]
+
+        System.out.println("------------");
+        String [] a1= {"Ali","Veli","Osman"};
+        String [] a2= {"Alii","Velii","Osmain"};
+
+        String [] result = merge(a1,a2);
+        System.out.println(Arrays.toString(result)); //[Ali, Veli, Osman, Alii, Velii, Osmain]
+
     }
 
     // merge the given two arrays and returns the new array
