@@ -13,8 +13,6 @@ public class MergeTwoArrays2 {
         newArray= ArraysUtility.merge(arr1,arr2);
         System.out.println(Arrays.toString(newArray)); //[1, 2, 3, 4, 5, 6, 7]
     }
-
-
     public static int [] merge (int [] arr1, int [] arr2){
         int [] result = {};
         for (int each : arr1) {
@@ -25,6 +23,4 @@ public class MergeTwoArrays2 {
         }
         return result;
     }
-
-
 }
