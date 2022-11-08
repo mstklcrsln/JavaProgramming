@@ -496,6 +496,54 @@ public class ArraysUtility {
         } return array;
     }
 
+    // removes the duplicated integers from the given array and returns new array
+    public static int [] removeDuplicates (int [] array) {
+        int [] result = {};
+
+        for (int each : array) {
+            if (!ArraysUtility.contains(result,each)) {
+                result= ArraysUtility.addElement(result,each);
+            }
+        }
+        return result;
+    }
+
+    // removes the duplicated decimals from the given array and returns new array
+    public static double [] removeDuplicates (double [] array) {
+        double [] result = {};
+
+        for (double each : array) {
+            if (!ArraysUtility.contains(result,each)) {
+                result= ArraysUtility.addElement(result,each);
+            }
+        }
+        return result;
+    }
+
+    // removes the duplicated chars from the given array and returns new array
+    public static char [] removeDuplicates (char [] array) {
+        char [] result = {};
+
+        for (char each : array) {
+            if (!ArraysUtility.contains(result,each)) {
+                result= ArraysUtility.addElement(result,each);
+            }
+        }
+        return result;
+    }
+
+    // removes the duplicated Strings from the given array and returns new array
+    public static String [] removeDuplicates (String [] array) {
+        String [] result = {};
+
+        for (String each : array) {
+            if (!ArraysUtility.contains(result,each)) {
+                result= ArraysUtility.addElement(result,each);
+            }
+        }
+        return result;
+    }
+
 }
 
 

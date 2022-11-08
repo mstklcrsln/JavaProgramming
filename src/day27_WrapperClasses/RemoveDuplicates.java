@@ -31,7 +31,6 @@ public class RemoveDuplicates {
             return result;
         }
 
-
     // removes the duplicated decimals from the given array and returns new array
     public static double [] removeDuplicates (double [] array) {
         double [] result = {};
@@ -44,7 +43,6 @@ public class RemoveDuplicates {
         return result;
     }
 
-
     // removes the duplicated chars from the given array and returns new array
     public static char [] removeDuplicates (char [] array) {
         char [] result = {};
@@ -56,7 +54,6 @@ public class RemoveDuplicates {
         }
         return result;
     }
-
 
     // removes the duplicated Strings from the given array and returns new array
     public static String [] removeDuplicates (String [] array) {
