@@ -233,5 +233,27 @@ public class ArraysUtility {
         }
         return result;
     }
+
+    // removes the index from array, returns new array
+    public static int[] removeElement(int[] array, int index) {
+
+        if (index<0|| index>array.length-1){  // if the given index is out of boundry
+            System.err.println("Invalid index :" + index);
+            System.exit(0);
+        }
+
+        int[] result = new int[array.length - 1];
+
+        int j = 0; // in the for each loop we don't access to the index of int [] result, so we create j which will represent the indexes of array result when the loop executed for each time
+
+        //from his line we write the code again with for loop
+        for (int i = 0; i <array.length ; i++) {
+            if (i == index) { // if the index of array is matching with the given index
+                continue;
+            }
+            result[j++] = array[i];
+        }
+        return result;
+    }
 }
 

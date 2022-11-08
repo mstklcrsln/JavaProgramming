@@ -19,7 +19,7 @@ public class RemoveElements1 {
         System.out.println(Arrays.toString(numbers)); //[100, 500, 600]
 
     }
-
+        // removes the index from array, returns new array
     public static int[] removeElement(int[] array, int index) {
 
         if (index<0|| index>array.length-1){  // if the given index is out of boundry
