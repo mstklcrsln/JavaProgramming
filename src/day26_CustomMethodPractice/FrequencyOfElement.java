@@ -45,7 +45,7 @@ public class FrequencyOfElement {
     public static int frequencyOfElement (String [] array, String element){
         int count=0;
         for (String each : array) { // each represents ech elements of the arrar
-            if (each==element){
+            if (each.equals(element)){
                 count++;
             }
         }
