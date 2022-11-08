@@ -146,4 +146,49 @@ public class ArraysUtility {
         result[i]= element; //i is the last index of array
         return result;
     }
+    //gives the frequency of an element in an array
+    public static int frequencyOfElement (int [] array, int element){
+        int count=0;
+        for (int each : array) { // each represents ech elements of the arrar
+            if (each==element){
+                count++;
+            }
+        }
+        return count;
+    }
+
+
+    //gives the frequency of a double from the given array
+    public static int frequencyOfElement (double [] array, double element){
+        int count=0;
+        for (double each : array) { // each represents ech elements of the arrar
+            if (each==element){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    //gives the frequency of a char from the given array
+    public static int frequencyOfElement (char [] array, char element){
+        int count=0;
+        for (char each : array) { // each represents ech elements of the arrar
+            if (each==element){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    //gives the frequency of a string from the given array
+    public static int frequencyOfElement (String [] array, String element){
+        int count=0;
+        for (String each : array) { // each represents ech elements of the arrar
+            if (each==element){
+                count++;
+            }
+        }
+        return count;
+    }
 }
+
