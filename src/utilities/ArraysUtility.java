@@ -420,6 +420,42 @@ public class ArraysUtility {
         return result;
     }
 
+    // replaces/ changes the element in the given array returns new array
+    public static int [] replace (int [] array, int index, int newElement){
+        if (index<0 || index>array.length-1){
+            System.err.println("ınvalid index :" + index);
+            System.exit(0);}
+        array[index]= newElement;
+        return array;
+    }
+
+    // replaces/ changes the doubles  in the given array returns new array
+    public static double [] replace (double [] array, int index, double newElement){
+        if (index<0 || index>array.length-1){
+            System.err.println("ınvalid index :" + index);
+            System.exit(0);}
+        array[index]= newElement;
+        return array;
+    }
+
+    // replaces/ changes the chars in the given array returns new array
+    public static char [] replace (char [] array, int index, char newElement){
+        if (index<0 || index>array.length-1){
+            System.err.println("ınvalid index :" + index);
+            System.exit(0);}
+        array[index]= newElement;
+        return array;
+    }
+
+    // replaces/ changes the chars in the given array returns new array
+    public static String [] replace (String [] array, int index, String newElement){
+        if (index<0 || index>array.length-1){
+            System.err.println("ınvalid index :" + index);
+            System.exit(0);}
+        array[index]= newElement;
+        return array;
+    }
+
 }
 
 
