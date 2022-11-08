@@ -22,7 +22,7 @@ public class RemoveElements1 {
         // removes the index from array, returns new array
     public static int[] removeElement(int[] array, int index) {
 
-        if (index<0|| index>array.length-1){  // if the given index is out of boundry
+        if (index<0 || index>array.length-1){  // if the given index is out of boundry
             System.err.println("Invalid index :" + index);
             System.exit(0);
         }

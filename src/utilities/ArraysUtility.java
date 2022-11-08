@@ -161,7 +161,6 @@ public class ArraysUtility {
         return count;
     }
 
-
     //gives the frequency of a double from the given array
     public static int frequencyOfElement (double [] array, double element){
         int count=0;
@@ -280,7 +279,6 @@ public class ArraysUtility {
         return result;
     }
 
-
     // removes the char given index from array, returns new array
     public static char [] removeElement(char[] array, int index) {
 
@@ -299,7 +297,6 @@ public class ArraysUtility {
         }
         return result;
     }
-
 
     // removes the String given index from array, returns new array
     public static String [] removeElement(String[] array, int index) {

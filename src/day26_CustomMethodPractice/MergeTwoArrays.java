@@ -10,9 +10,6 @@ public class MergeTwoArrays {
         int arr3 [] = merge(arr1,arr2);
         System.out.println(Arrays.toString(arr3)); //[1, 2, 3, 4, 5, 5, 6, 7, 8, 9]
     }
-
-
-
     public static int [] merge (int [] arr1, int [] arr2){
         int [] result = new int [arr1.length+arr2.length];
         int i=0; // track the index number of third array
