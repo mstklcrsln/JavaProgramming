@@ -319,6 +319,19 @@ public class ArraysUtility {
         }
         return result;
     }
+
+    // merge the given two arrays and returns the new array
+    public static int [] merge (int [] arr1,int []arr2){
+       // int [] result = new int [arr1.length+arr2.length];
+        int [] result = {};
+        for (int each : arr1) {
+            result= addElement(result,each);
+        }
+        for (int each : arr2) {
+            result= addElement(result,each);
+        }
+        return result;
+    }
 }
 
 
