@@ -22,6 +22,9 @@ public class UniqueElements {
 
         System.out.println("-----------------");
 
+        char [] charArray ={ 'F','F','F','F','D','C','C','C','B','B','B','A'};
+        char [] uniqChars = uniqueElements(charArray);
+        System.out.println(Arrays.toString(uniqChars)); //[D, A]
 
     }
         // Returns the unique elements of the array as a new array
@@ -46,8 +49,27 @@ public class UniqueElements {
         return result;
     }
 
+    // Returns the unique char of the array as a new array
+    public static char [] uniqueElements (char [] array){
+        char [] result = {};  // new int [0]
+        for (char each : array) {
+            if(ArraysUtility.frequencyOfElement(array,each)==1) { // if the frequence is 1 that means the element is uniq.
+                result= ArraysUtility.addElement(result,each);
+            }
+        }
+        return result;
+    }
 
-
+    // Returns the unique String of the array as a new array
+    public static String [] uniqueElements (String [] array){
+        String [] result = {};  // new int [0]
+        for (String each : array) {
+            if(ArraysUtility.frequencyOfElement(array,each)==1) { // if the frequence is 1 that means the element is uniq.
+                result= ArraysUtility.addElement(result,each);
+            }
+        }
+        return result;
+    }
     }
 
 
