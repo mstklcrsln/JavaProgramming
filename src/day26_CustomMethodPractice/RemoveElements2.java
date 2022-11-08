@@ -2,7 +2,18 @@ package day26_CustomMethodPractice;
 
 import utilities.ArraysUtility;
 
+import java.util.Arrays;
+
 public class RemoveElements2 {
+    public static void main(String[] args) {
+
+        int [] numbers= {100,200,300,400,500,600};
+
+        numbers=removeElement(numbers,1); //200 will be skipped
+        System.out.println(Arrays.toString(numbers)); //[100, 300, 400, 500, 600]
+
+
+    }
 
     public static int [] removeElement (int [] array, int index){
 
@@ -14,7 +25,7 @@ public class RemoveElements2 {
 
         for (int i = 0; i < array.length; i++) {
             if (i!= index){
-                ArraysUtility.addElement(result,array[i]);
+               result= ArraysUtility.addElement(result,array[i]);
             }
         }return result;
     }

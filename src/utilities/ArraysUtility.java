@@ -10,25 +10,27 @@ public class ArraysUtility {
             System.out.println(each);
         }
     }
+
     // it prints ech decimal number from double array in seperate lines
     public static void printEachElement (double [] array) {
         for (double each : array) {
             System.out.println(each);
         }
     }
+
     // it prints each char of char array from array in seperate lines
     public static void printEachElement (char [] array) {
         for (char each : array) {
             System.out.println(each);
         }
     }
+
     // it prints each String of string array from array in seperate lines
     public static void printEachElement (String [] array) {
         for (String each : array) {
             System.out.println(each);
         }
     }
-
 
     // find the max number from integer array
     public static int max (int [] numbers) {
@@ -53,7 +55,6 @@ public class ArraysUtility {
         return numbers [0];}
 
     // checks if the given integer is contained in the given array, returns boolean.
-
     public static boolean contains(int [] array, int element){
         boolean result= false;
 
@@ -76,6 +77,7 @@ public class ArraysUtility {
         }
         return result;
     }
+
     // checks if the given char is contained in the given array, returns boolean.
     public static boolean contains(char [] array, char element){
         boolean result= false;
@@ -99,6 +101,7 @@ public class ArraysUtility {
         }
         return result;
     }
+
     //	1. create a return method called addInteger that can add an Inteeger  after the  last index of an integer array
     public static int[] addElement(int[] array, int element) {
         int[] result = new int[array.length + 1];
@@ -146,6 +149,7 @@ public class ArraysUtility {
         result[i]= element; //i is the last index of array
         return result;
     }
+
     //gives the frequency of an element in an array
     public static int frequencyOfElement (int [] array, int element){
         int count=0;
@@ -190,6 +194,7 @@ public class ArraysUtility {
         }
         return count;
     }
+
     // Returns the unique elements of the array as a new array
     public static int [] uniqueElements (int [] array){
         int [] result = {};  // new int [0]
@@ -255,5 +260,66 @@ public class ArraysUtility {
         }
         return result;
     }
+
+    // removes the decimals given index from array, returns new array
+    public static double[] removeElement(double[] array, int index) {
+
+        if (index<0|| index>array.length-1){  // if the given index is out of boundry
+            System.err.println("Invalid index :" + index);
+            System.exit(0);
+        }
+        double[] result = new double[array.length - 1];
+        int j = 0;
+
+        for (int i = 0; i <array.length ; i++) {
+            if (i == index) {
+                continue;
+            }
+            result[j++] = array[i];
+        }
+        return result;
+    }
+
+
+    // removes the char given index from array, returns new array
+    public static char [] removeElement(char[] array, int index) {
+
+        if (index<0|| index>array.length-1){  // if the given index is out of boundry
+            System.err.println("Invalid index :" + index);
+            System.exit(0);
+        }
+        char[] result = new char [array.length - 1];
+        int j = 0;
+
+        for (int i = 0; i <array.length ; i++) {
+            if (i == index) {
+                continue;
+            }
+            result[j++] = array[i];
+        }
+        return result;
+    }
+
+
+    // removes the String given index from array, returns new array
+    public static String [] removeElement(String[] array, int index) {
+
+        if (index<0|| index>array.length-1){  // if the given index is out of boundry
+            System.err.println("Invalid index :" + index);
+            System.exit(0);
+        }
+        String [] result = new String [array.length - 1];
+        int j = 0;
+
+        for (int i = 0; i <array.length ; i++) {
+            if (i == index) {
+                continue;
+            }
+            result[j++] = array[i];
+        }
+        return result;
+    }
 }
+
+
 

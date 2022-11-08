@@ -26,11 +26,8 @@ public class RemoveElements1 {
             System.err.println("Invalid index :" + index);
             System.exit(0);
         }
-
         int[] result = new int[array.length - 1];
-
         int j = 0; // in the for each loop we don't access to the index of int [] result, so we create j which will represent the indexes of array result when the loop executed for each time
-        
         //from his line we write the code again with for loop
         for (int i = 0; i <array.length ; i++) {
             if (i == index) { // if the index of array is matching with the given index
@@ -51,8 +48,66 @@ public class RemoveElements1 {
         return result;
     }*/
 
-}
 
+    // removes the decimals given index from array, returns new array
+    public static double[] removeElement(double[] array, int index) {
+
+        if (index<0|| index>array.length-1){  // if the given index is out of boundry
+            System.err.println("Invalid index :" + index);
+            System.exit(0);
+        }
+        double[] result = new double[array.length - 1];
+        int j = 0;
+
+        for (int i = 0; i <array.length ; i++) {
+            if (i == index) {
+                continue;
+            }
+            result[j++] = array[i];
+        }
+        return result;
+    }
+
+
+    // removes the char given index from array, returns new array
+    public static char [] removeElement(char[] array, int index) {
+
+        if (index<0|| index>array.length-1){  // if the given index is out of boundry
+            System.err.println("Invalid index :" + index);
+            System.exit(0);
+        }
+        char[] result = new char [array.length - 1];
+        int j = 0;
+
+        for (int i = 0; i <array.length ; i++) {
+            if (i == index) {
+                continue;
+            }
+            result[j++] = array[i];
+        }
+        return result;
+    }
+
+
+    // removes the String given index from array, returns new array
+    public static String [] removeElement(String[] array, int index) {
+
+        if (index<0|| index>array.length-1){  // if the given index is out of boundry
+            System.err.println("Invalid index :" + index);
+            System.exit(0);
+        }
+        String [] result = new String [array.length - 1];
+        int j = 0;
+
+        for (int i = 0; i <array.length ; i++) {
+            if (i == index) {
+                continue;
+            }
+            result[j++] = array[i];
+        }
+        return result;
+    }
+}
 
 /*
 2. Create a class named RemoveElements:
