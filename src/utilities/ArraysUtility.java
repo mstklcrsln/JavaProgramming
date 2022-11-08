@@ -456,6 +456,46 @@ public class ArraysUtility {
         return array;
     }
 
+    // replaces all the matching old value (int) in the array to the new value
+    public static int [] replaceAll (int[] array, int oldValue, int newValue){
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]== oldValue){
+                array[i]= newValue;
+            }
+        } return array;
+    }
+
+    // replaces all the matching old value (double) in the array to the new value
+    public static double [] replaceAll (double[] array, double oldValue, double newValue){
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]== oldValue){
+                array[i]= newValue;
+            }
+        } return array;
+    }
+
+    // replaces all the matching old value (char) in the array to the new value
+    public static char [] replaceAll (char[] array, char oldValue, char newValue){
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]== oldValue){
+                array[i]= newValue;
+            }
+        } return array;
+    }
+
+    // replaces all the matching old value (String) in the array to the new value
+    public static String [] replaceAll (String[] array, String oldValue, String newValue){
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(oldValue)){
+                array[i]= newValue;
+            }
+        } return array;
+    }
+
 }
 
 
