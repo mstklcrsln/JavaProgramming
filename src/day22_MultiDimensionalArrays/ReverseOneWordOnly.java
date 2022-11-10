@@ -11,7 +11,7 @@ public class ReverseOneWordOnly {
             String [] words= sentence.split(" ");
             String reversed= "";
                         //belove is not array. we get the charcters of string from last to beginning we call the eleent in the index 1 of the array. and it is String
-        for (int i = words[1].length()-1; i >=0 ; i--) { //we just have to iterte the string from last
+        for (int i = words[1].length()-1; i >=0 ; i--) { //we just have to iterate the string from last
             // String (love) is in the index 1 of array. if i want too find the last index num of string write: int i = words[1].length()-1
             // by using i we re going to get each characters from the second string (love, ndex 1 of array).
                reversed +=  words[1].charAt(i); // i gives us the each of the characters in the word and add this to the string variable reversed
