@@ -36,6 +36,7 @@ public class ArryListPractice {
         remove(int index): removes the element at the given index
 	    remove(Object): removes the given object from arraylist, returns boolean
 	    remove method decreases the size of array, we can pass index numbers or object
+	    remove gives returns boolean result true ==>removed "false==>not removed
          */
 
         ArrayList<String> employees= new ArrayList<>();
@@ -56,6 +57,7 @@ public class ArryListPractice {
         employees.remove("Wooden");// removes by object
         System.out.println(employees); //[Suat, Mesut, Muhtar, Ali, Jack]   Wooden has removed
 
+          // to remove the last element          employees.remove(employees.size()-1)
         employees.remove(0);
         System.out.println(employees);//[Mesut, Muhtar, Ali, Jack]
 
@@ -67,5 +69,10 @@ public class ArryListPractice {
 
         employees.remove(0);
         System.out.println(employees); //[Jack]
+
+        boolean r1= employees.remove("jack");
+        System.out.println("r1 = " + r1); // r1 = false
+
+
     }
 }
