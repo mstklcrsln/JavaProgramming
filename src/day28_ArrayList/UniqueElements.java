@@ -31,6 +31,11 @@ public class UniqueElements {
         }
         System.out.println(unique); //[Python, Ruby] the unique elements of array
 
+        System.out.println("-----------------");
+
+        boolean r2= list.contains("C++");
+        System.out.println("r2 = " + r2); //r2 = true
+
 
 
 
