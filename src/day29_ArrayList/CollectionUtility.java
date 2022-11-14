@@ -35,8 +35,12 @@ public class CollectionUtility {
         Collections.swap(list3,2,4);
         System.out.println(list3); //[10, 20, 50, 40, 30, 60] we changed 2 and 4th element by using indexes
 
+        System.out.println("----------------");
+        // max and min number
+       int max=  Collections.max(list3);
+        System.out.println(max);  //60
 
+        int min= Collections.min(list3);
+        System.out.println(min);//10
     }
-
-
 }
