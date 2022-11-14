@@ -36,5 +36,18 @@ public class RemoveIfMethod {
         // i want to remove all the even numbers from the ArrayList
         list2.removeIf(each-> each%2==0);
         System.out.println(list2); //[1, 3, 5, 11, 33, 55, 77, 9, 111]
+
+        System.out.println("--------------------");
+
+        ArrayList<String> list3 = new ArrayList<>();
+
+        list3.addAll(Arrays.asList("Josh", "Shay","Shay","Jack", "Daniel",  "Selim","Selim","Selim", "Breanna","Shay","Mesut", "Wooden", "Muhtar"));
+
+        // we will remove all elements starts with s
+
+        list3.removeIf(start-> start.startsWith("S"));
+        System.out.println("list3 = " + list3); //list3 = [Josh, Jack, Daniel, Breanna, Mesut, Wooden, Muhtar]
+
+
     }
 }
