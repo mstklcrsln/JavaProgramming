@@ -1,5 +1,7 @@
 package day29_ArrayList;
 
+import utilities.StringUtility;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -48,6 +50,14 @@ public class RemoveIfMethod {
         list3.removeIf(start-> start.startsWith("S"));
         System.out.println("list3 = " + list3); //list3 = [Josh, Jack, Daniel, Breanna, Mesut, Wooden, Muhtar]
 
+        System.out.println("--------------------");
+        // to remove all the palindromes from Arraylist, we use method from out StringUtility class
+        ArrayList<String> names = new ArrayList<>();
+        names.addAll(Arrays.asList("Josh", "Shay","Ali","Jack", "Level", "Daniel",  "Selim","Veli", "Racecar","Selim", "Breanna","Shay"));
+
+        names.removeIf(name-> StringUtility.isPalindrome(name));
+        System.out.println(names); // [Josh, Shay, Ali, Jack, Daniel, Selim, Veli, Selim, Breanna, Shay]        it deleted racecar and level
+       // names.removeIf(name-> ! StringUtility.isPalindrome(name)); this is remove elements which not palindrome
 
     }
 }
