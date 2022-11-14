@@ -26,5 +26,8 @@ public class RemoveDuplicates {
              result.add(each);
         }
         System.out.println(result); //[10, 20, 0, 30]
+
+
+
     }
 }

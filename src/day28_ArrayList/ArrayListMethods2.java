@@ -1,6 +1,7 @@
 package day28_ArrayList;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ArrayListMethods2 {
     public static void main(String[] args) {
@@ -59,20 +60,28 @@ public class ArrayListMethods2 {
         // unique element: if the first index and last index is equal than the element is uniq
 
 
+        System.out.println("------------------");
+        ArrayList<Integer> list1= new ArrayList<>();
+        list1.add(100);
+        list1.add(100);
+        list1.add(100);
 
+        ArrayList<Integer>list2= new ArrayList<>();
+        list2.add(100);
+        list2.add(100);
+        list2.add(100);
+        //equal means same elements in same orders
+        //  System.out.println(list1==list2); false
+        // if we want to see that these two arraylists have the same elements
+        System.out.println(list1.equals(list2)); //true
 
+        System.out.println("-----------------");
 
+        ArrayList<Integer> numbers = new ArrayList<>();
 
+        // bulk operation: collection type
+        numbers.addAll(Arrays.asList(1,2,3,4,5,6,7,8,9 ));
 
-
-
-
-
-
-
-
-
-
-
+        System.out.println(numbers); //[1, 2, 3, 4, 5, 6, 7, 8, 9]
     }
 }
