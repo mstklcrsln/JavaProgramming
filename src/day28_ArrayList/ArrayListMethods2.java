@@ -31,5 +31,48 @@ public class ArrayListMethods2 {
         System.out.println("r = " + r); // true
 
 
+        System.out.println("-----------------------");
+
+        //clear(): remove all the elements of the arraylist, size will be 0
+
+        list.clear(); // removes all objects from array
+        System.out.println(list); //[]
+
+        System.out.println("-----------------------");
+        //indexOf and lastIndexOf methods
+
+        ArrayList<Character> characters = new ArrayList<>();
+
+        characters.add('A');
+        characters.add('A');
+        characters.add('A');
+        characters.add('A');
+        characters.add('A');
+        characters.add('A');
+
+        int in1= characters.indexOf('A'); // it will give 0, the first index
+        int in2= characters.lastIndexOf('A'); // it will give 5, the last index
+        System.out.println(in1); //0
+        System.out.println(in2);// 5
+
+
+        // unique element: if the first index and last index is equal than the element is uniq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
