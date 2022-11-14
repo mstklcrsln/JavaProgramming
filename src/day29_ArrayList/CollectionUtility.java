@@ -42,5 +42,33 @@ public class CollectionUtility {
 
         int min= Collections.min(list3);
         System.out.println(min);//10
+
+        System.out.println("----------------");
+        // replaceAll method
+        ArrayList <Integer> list4= new ArrayList<>();
+        list4.addAll(Arrays.asList(10,10,20,30,40,50,6,01,0,70,10,1,10));
+
+        Collections.replaceAll(list4,10,999);
+        System.out.println("list4 = " + list4);  //list4 = [999, 999, 20, 30, 40, 50, 6, 1, 0, 70, 999, 1, 999]
+
+        System.out.println("----------------");
+        //frequency method
+        //to find the freq of 999 from list4
+        int freq = Collections.frequency(list4,999);
+        System.out.println(freq); //4
+
+        System.out.println("----------------");
+        //we want to find the frq of QA and SDET elements
+        ArrayList<String> words= new ArrayList<>();
+        words.addAll(Arrays.asList("QA", "SDET", "Developer", "QA", "SDET", "Scrum Master", "BA", "BA" ));
+
+        int freqQa= Collections.frequency(words,"QA");
+        int freqSdet = Collections.frequency(words,"SDET");
+
+        System.out.println("freqSdet = " + freqSdet);
+        System.out.println("freqQa = " + freqQa);
+
+
+
     }
 }
