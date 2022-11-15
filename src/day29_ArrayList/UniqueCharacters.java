@@ -29,18 +29,7 @@ public class UniqueCharacters {
             if (frequency==1){
                 unique+= eachElementOfArrayList;
             }
-
         }
         System.out.println(unique); // bqzxljr the uniq characters of the string
-
-
-
-
-
-
-
-
-
-
     }
 }
