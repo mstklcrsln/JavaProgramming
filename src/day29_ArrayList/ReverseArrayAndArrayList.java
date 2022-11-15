@@ -3,7 +3,7 @@ package day29_ArrayList;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class RreverseArrayAndArrayList {
+public class ReverseArrayAndArrayList {
     public static void main(String[] args) {
 
         int [] array = {1,2,3,4,5,6};
