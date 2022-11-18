@@ -1,5 +1,7 @@
 package day30_CustomClass;
 
+import java.util.ArrayList;
+
 public class DogObjects {
     public static void main(String[] args) {
 
@@ -37,5 +39,21 @@ public class DogObjects {
 
         dog1.eat();  //Lucy is eating
         dog2.bark(); //ACE is barking
+
+        Dog dog4= new Dog();
+        dog4.setInfo("Pamuk","Labrador",4,'F',"Small","Grey");
+
+        Dog dog5 = new Dog();
+        dog5.setInfo("Sully","Pit-Bull",2,'M',"Large","Black");
+
+        //we put all dog's into an array
+        Dog[] dogs ={dog5,dog4,dog3,dog1,dog2};
+
+        // we want to know how many female and male dogs we have and add them to the Arraylist
+        ArrayList<Dog> femaleDogs= new ArrayList<>();
+        ArrayList<Dog> maleDogs= new ArrayList<>();
+
+
+
     }
 }
