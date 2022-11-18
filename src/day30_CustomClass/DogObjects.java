@@ -27,12 +27,15 @@ public class DogObjects {
         dog2.color = "White & Black";
         dog2.gender= 'M';
         dog2.size= "Large";
-       System.out.println(dog2);  // Dog{name='ACE', breed='Husky', age=5, gender=M, size='Large', color='White&Black'}
+       System.out.println(dog2);  // Dog{name='ACE', breed='Husky', age=5, gender=M, size='Large', color='White & Black'}
 
         // after setInfo method
         Dog dog3= new Dog();
         dog3.setInfo("Jack","German",5,'F',"Large","Yellow");
 
         System.out.println(dog3); //Dog{name='Jack', breed='German', age=5, gender=F, size='Large', color='Yellow'}
+
+        dog1.eat();  //Lucy is eating
+        dog2.bark(); //ACE is barking
     }
 }
