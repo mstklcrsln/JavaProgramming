@@ -51,13 +51,11 @@ public class MyOffers {
         localOffers.removeIf(p-> !p.location.equals("VA"));
         System.out.println(localOffers.size()); //1
 
-
-
-
-
+        for (Offer each : localOffers) {
+            System.out.println(each.companyName+ " : "+ each.salary); //Amazon Inc : 110000.0
+        }
     }
 }
-
 /*
 2. Create a class named MyOffers:
 
