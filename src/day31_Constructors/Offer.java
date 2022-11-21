@@ -7,7 +7,7 @@ public class Offer {
     public boolean hasBenefit, hasPTO, isWHF,isFullTime;
 
 
-    public Offer(String location, String companyName, String jobTitle, double salary, boolean hasBenefit, boolean hasPTO, boolean isWHF, boolean isFullTime) {
+    public void setInfo (String location, String companyName, String jobTitle, double salary, boolean hasBenefit, boolean hasPTO, boolean isWHF, boolean isFullTime) {
         this.location = location;
         this.companyName = companyName;
         this.jobTitle = jobTitle;
@@ -23,7 +23,7 @@ public class Offer {
                 "location='" + location + '\'' +
                 ", companyName='" + companyName + '\'' +
                 ", jobTitle='" + jobTitle + '\'' +
-                ", salary=" + salary +
+                ", salary= $" + salary +
                 ", hasBenefit=" + hasBenefit +
                 ", hasPTO=" + hasPTO +
                 ", isWHF=" + isWHF +
