@@ -21,6 +21,7 @@ public class Pizza {
                 "size=" + size +
                 ", numberOfCheeseTopping=" + numberOfCheeseTopping +
                 ", numberOfPepperoniTopping=" + numberOfPepperoniTopping +
+                ", totalPrice = $" + calcCost() + // i added total price by myself
                 '}';
     }
 }
