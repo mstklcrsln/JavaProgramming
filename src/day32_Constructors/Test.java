@@ -28,5 +28,4 @@ public class Test {
 
         new Test("Java"); // A B C D
     }
-
 }
