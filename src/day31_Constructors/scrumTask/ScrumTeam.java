@@ -18,28 +18,40 @@ public class ScrumTeam {
     }
 
     // Actions:
+    // addTester(Tester tester): adds the given tester to the testers ArrayList
     public void addTester (Tester tester){ // this is the function that can add one tester into the arraylist
         testersList.add(tester);
     }
-
+    //addTesters(Tester[] testers): adds the given testers to the testers ArrayList
     public void addTesters (Tester [] testers) {// this is the function that can add multiple tester into the arraylist
         testersList.addAll(Arrays.asList(testers));
     }
-
+    //addDeveloper(Developer developer): adds the given developer to the developers ArrayList
     public void  addDeveloper (Developer developer){
         devopsList.add(developer);
     }
-
+    //addDevelopers(Developer[] developers): adds the given developers to the developers ArrayList
     public void  addDevelopers (Developer [] developers){
         devopsList.addAll(Arrays.asList(developers));
     }
-
+    //removeTester(long employeeID): removes the given tester from the testers ArrayList
     public void removeTester(int employeeID){
         testersList.removeIf(p-> p.employeeID==employeeID); //if given ID matches we remove it from testers list
     }
-
+    //removeDeveloper(long employeeID): removes the developer from the developers ArrayList
     public void removeDeveloper (int employeeID){
         testersList.removeIf(p-> p.employeeID==employeeID);
+    }
+    // toString(): prints number of tester,& developers,  PO name, SM name, BA name
+    public String toString() {
+        return "ScrumTeam{" +
+                "PO='" + PO + '\'' +
+                ", BA='" + BA + '\'' +
+                ", SM='" + SM + '\'' +
+                ", total numbers of testers" + testersList.size()+ // we modified this part
+                ", total numbers of testers" + devopsList.size() +
+                ", daysOfSprint=" + daysOfSprint +
+                '}';
     }
 }
 /*
