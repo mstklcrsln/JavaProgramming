@@ -19,6 +19,16 @@ public class Carpet {
         }
         return totalPrice;
     }
+
+    public String toString() {
+        return "Carpet{" +
+                "width=" + width +
+                ", length=" + length +
+                ", unitPrice= $" + unitPrice +
+                ", isPersian=" + isPersian +
+                ", totalPrice = $" + calcCost() +
+                '}';
+    }
 }
 
 /*
