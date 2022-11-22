@@ -60,6 +60,13 @@ public class MyScrumTeam {
         Zeynep : 139000.0
         Sevval : 129000.0
          */
+        System.out.println("---------------------------");
+
+        // we remove the tester who has ID 23 and after that we have 3 tester
+        scrum.removeTester(23);
+       scrum.removeDeveloper(93);
+        System.out.println(scrum); //ScrumTeam{PO='Nigara', BA='Huseyin', SM='Neira', total numbers of testers :3, total numbers of testers :3, daysOfSprint=14}
+
     }
 }
 

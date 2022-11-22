@@ -49,7 +49,7 @@ public class ScrumTeam {
                 ", BA='" + BA + '\'' +
                 ", SM='" + SM + '\'' +
                 ", total numbers of testers :" + testersList.size()+ // we modified this part
-                ", total numbers of testers :" + devopsList.size() +
+                ", total numbers of developers :" + devopsList.size() +
                 ", daysOfSprint=" + daysOfSprint +
                 '}';
     }
