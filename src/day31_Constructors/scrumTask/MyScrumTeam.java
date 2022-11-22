@@ -35,6 +35,31 @@ public class MyScrumTeam {
         scrum.addDevelopers(developers);
        // System.out.println(scrum); ScrumTeam{PO='Nigara', BA='Huseyin', SM='Neira', total numbers of testers :4, total numbers of testers :4, daysOfSprint=14}
 
+
+        System.out.println("---------------------------");
+
+        // for writing every single testers
+        for (Tester eachTester: scrum.testersList){
+            System.out.println(eachTester.name + " : "+ eachTester.salary);
+        }
+        /*
+        Layan : 110000.0
+        Ali : 142000.0
+        Alex : 135000.0
+        Lala : 115000.0
+         */
+
+        System.out.println("---------------------------");
+
+        for (Developer eachDeveloper : scrum.devopsList) {
+            System.out.println(eachDeveloper.name + " : " + eachDeveloper.salary);
+        }
+        /*
+        Ravza : 159000.0
+        Mesut : 149000.0
+        Zeynep : 139000.0
+        Sevval : 129000.0
+         */
     }
 }
 
