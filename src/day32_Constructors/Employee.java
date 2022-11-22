@@ -10,24 +10,33 @@ public class Employee {
     public Employee (String name){
         this.name= name;
     }
-    public Employee (String name, char gender){
-     // Employee(name);
-        //this (name);
+   /* public Employee (String name, char gender){
         this.name=name;
-        this.gender= gender;
+        this.gender= gender;*/
+    public Employee (String name, char gender){
+       this(name);
+       this.gender= gender;
     }
-    public Employee (String name, char gender, String jobTitle){
+    /* public Employee (String name, char gender, String jobTitle){
         this.name= name;
         this.gender= gender;
         this.jobTitle=jobTitle;
+    }*/
+    public Employee (String name, char gender, String jobTitle){
+        this(name, gender);
+        this.jobTitle=jobTitle;
     }
 
-    public Employee (String name, char gender, String jobTitle, double salary){
+   /* public Employee (String name, char gender, String jobTitle, double salary){
         this.name= name;
         this.gender= gender;
         this.jobTitle=jobTitle;
         this.salary= salary;
-    }
+    }*/
+   public Employee (String name, char gender, String jobTitle, double salary){
+       this(name,gender,jobTitle);
+       this.salary= salary;
+   }
 
     public String toString() {
         return "Employee{" +
