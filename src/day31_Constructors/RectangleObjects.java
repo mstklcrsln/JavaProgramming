@@ -8,7 +8,6 @@ public class RectangleObjects {
         Rectangle rectangle3 = new Rectangle(9,23);
         Rectangle rectangle4 = new Rectangle(1,2.5);
 
-
         System.out.println(rectangle1);
         System.out.println(rectangle2);
         System.out.println(rectangle3);
