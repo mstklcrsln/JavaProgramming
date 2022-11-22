@@ -29,8 +29,17 @@ public class ScrumTeam {
     public void  addDeveloper (Developer developer){
         devopsList.add(developer);
     }
+
     public void  addDevelopers (Developer [] developers){
         devopsList.addAll(Arrays.asList(developers));
+    }
+
+    public void removeTester(int employeeID){
+        testersList.removeIf(p-> p.employeeID==employeeID); //if given ID matches we remove it from testers list
+    }
+
+    public void removeDeveloper (int employeeID){
+        testersList.removeIf(p-> p.employeeID==employeeID);
     }
 }
 /*
