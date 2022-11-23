@@ -19,6 +19,11 @@ public class CustomMethodsIntro {
         System.out.println("Hello Cydeo");
         System.out.println("How are you today");
 
+
+    }
+
+    public void CustomMethodsIntro () {
+
     }
 
 }
