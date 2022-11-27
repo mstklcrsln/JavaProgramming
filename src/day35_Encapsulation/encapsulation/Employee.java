@@ -50,8 +50,7 @@ public class Employee {
     }
 
     public void setGender(char gender) {
-        if (gender != 'F' || gender != 'M'){
-            //(! (gender == 'F' || gender == 'M'))
+        if (! (gender == 'F' || gender == 'M')){
             System.err.println( "Invalid entry" +  gender);
             //System.exit(0);
             return;
