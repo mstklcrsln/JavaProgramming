@@ -53,7 +53,6 @@ public class CydeoStudents {
     // if we need to use both static and instance variables in one method
     //if we use AT LEAST only one INSTANCE, METHOD MUST BE VOID (INSTANCE), instance method can access static method. Like toString method.
 
-
     public String toString() {
         return "CydeoStudents{" +
                 "name='" + name + '\'' +
@@ -65,3 +64,20 @@ public class CydeoStudents {
                 '}';
     }
 }
+/*
+2. create a class named CybertekStudent
+            Variables:
+                name, gender, age, batchNumber, groupNumber, schoolName, fieldOfStudy, programmingLanguage, secretCode
+
+            Add a constructor to initialize all the fields
+
+            Add a static block to initialize all the statics
+
+            methods:
+                printSchoolName();
+                printSecretCode();
+                attendClass():
+                study()
+                toString()
+
+ */
