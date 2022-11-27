@@ -7,8 +7,14 @@ public class EmployeeObjects {
 
         System.out.println("employee1 = " + employee1); //employee1 = Employee{name='Adam', gender=M, age=32, salary=90000.0}
 
+        Employee employee2 = new Employee("", 'G',-32,0);
 
-
+        System.out.println("employee2 = " + employee2);
+        /*
+        employee2 = Employee{name='null', gender= , age=0, salary=0.0}
+        Invalid entry
+        Invalid entryG
+         */
 
 
     }
