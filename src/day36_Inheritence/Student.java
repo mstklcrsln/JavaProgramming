@@ -92,7 +92,7 @@ public class Student {
 						2. gender should not be set to any character other than: 'M' and 'F'
 						3. grade should not be set to any character other than: 'A', 'B', 'C', 'D', and 'F'
 			Add a constructor that can set all the fields when the object is created
-						(requirments of fileds in the above must be applied)
+						(requirements of fields in the above must be applied)
 			Methods:
 				study()
 				toString()
