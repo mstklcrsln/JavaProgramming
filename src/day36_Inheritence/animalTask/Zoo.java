@@ -27,6 +27,49 @@ public class Zoo {
         System.out.println("dog1 = " + dog1); //dog1 = Animal{name='Kenedy', breed='German', gender= , age=3, size='null', color='Black'}
 
 
+        System.out.println("------------------------");
 
+        dog1.setInfo("Max", "Hsky",'M', 3,"Small","Green");
+        dog1.drink();
+        dog1.bark();
+        dog1.eat();
+        dog1.sleep();
+        System.out.println("dog1 = " + dog1);
+        /*
+        Maxis drinking
+        Max is barking
+        Maxis eating
+        Maxis sleeping
+        dog1 = Animal{name='Max', breed='Hsky', gender=M, age=3, size='Small', color='Green'}
+         */
+
+        tiger1.setInfo("Sher", "Bengal", 'F', 6,"Small", "Pink");
+        System.out.println(tiger1); //
+
+        cat1.eat();
+        cat1.meow();
+        cat1.scratch();
+        cat1.drink();
+        cat1.setInfo("Mini", "Van", 'M',5,"Big", "Red");
+        System.out.println("cat1 = " + cat1);
+        /*
+        null is eating
+        null is meowing
+        null is scratching
+        null is drinking
+        cat1 = Animal{name='Mini', breed='Van', gender=M, age=5, size='Big', color='Red'}
+         */
+        cat1.eat();
+        cat1.meow();
+        cat1.scratch();
+        cat1.drink();
+        System.out.println("cat1 = " + cat1);
+        /*
+        Mini is eating
+        Mini is meowing
+        Mini is scratching
+        Mini is drinking
+        cat1 = Animal{name='Mini', breed='Van', gender=M, age=5, size='Big', color='Red'}
+         */
     }
 }

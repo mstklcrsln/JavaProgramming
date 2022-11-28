@@ -19,16 +19,16 @@ public class Animal {
     }
 
     public void eat(){
-        System.out.println(name+ "is eating");
+        System.out.println(name+ " is eating");
     }
     public void drink (){
-        System.out.println(name+ "is drinking");
+        System.out.println(name+ " is drinking");
     }
     public void move (){
-        System.out.println(name+ "is moving");
+        System.out.println(name+ " is moving");
     }
     public void sleep (){
-        System.out.println(name+ "is sleeping");
+        System.out.println(name+ " is sleeping");
     }
 
     public String toString() {
