@@ -1,4 +1,4 @@
-package day36_Inheritence;
+package day36_Inheritence.encapsulation;
 
 public class Student {
 

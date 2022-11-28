@@ -1,4 +1,6 @@
-package day36_Inheritence;
+package day36_Inheritence.encapsulation;
+
+import day36_Inheritence.encapsulation.Student;
 
 public class StudentObjects {
     public static void main(String[] args) {
