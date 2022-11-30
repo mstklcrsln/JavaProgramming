@@ -46,5 +46,11 @@ public class PhoneShop {
 
         nokia1.selfDefense(); //you can use 3210 as self defence tool
 
+        System.out.println("--------------------------");
+
+        System.out.println(Phone.hasBattery); //true
+        System.out.println(IPhone.hasBattery); //true
+        System.out.println(Samsung.hasBattery); //true
+
     }
 }
