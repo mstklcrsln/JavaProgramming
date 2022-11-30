@@ -9,7 +9,7 @@ public class Dog extends Animal {
         this.a=a; // we added later and we need to assign it to the object
     }
     public void bark (){
-
+        System.out.println("bark");
     }
 
 }
