@@ -16,7 +16,7 @@ public class Employee extends Person {
     }
 
    public void work (){
-
+       System.out.println(jobTitle+ " " + name+ " is working");
    }
 
     public String toString() {
