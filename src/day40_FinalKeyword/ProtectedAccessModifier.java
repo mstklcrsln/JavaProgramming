@@ -6,4 +6,11 @@ public class ProtectedAccessModifier {
 
     protected static String name2= "Wooden spoon"; // this variable could be visible if the class is sub class.
 
+    static void method1 (){
+
+    }
+
+    protected static void method2 (){
+
+    }
 }

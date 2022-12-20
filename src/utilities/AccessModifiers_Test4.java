@@ -11,5 +11,11 @@ public class AccessModifiers_Test4 extends ProtectedAccessModifier {
       //  System.out.println(ProtectedAccessModifier.name1); we can not reach this name1 variable
 
         System.out.println(AccessModifiers_Test4.name2); //Wooden spoon
+
+
+        // methods reachibility
+
+        AccessModifiers_Test4.method2();// only method 2 is visible
+      //  AccessModifiers_Test4.method1();      not visible
     }
 }
