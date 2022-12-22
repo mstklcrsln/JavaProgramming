@@ -120,10 +120,12 @@ public class TryCatchBlocks {
             System.out.println(numbers2[200]);
         } catch (RuntimeException e) { // we used parent class RuntimeException
             e.printStackTrace(); // this method is very efficient for reports
+            //  e.printStackTrace() we use this method in the automation testing
         }
         System.out.println("Test 4 completed");
         /*
          writes in the console: after write everything and after that explains the exception. Not terminates the programme
+
 
         Test 4 started
         Test 4 completed
@@ -143,7 +145,7 @@ public class TryCatchBlocks {
             System.out.println(e.getMessage()); // it gives us Index 200 out of bounds for length 5
         }
         System.out.println("Test 5 completed");
-    }
+
     /*
      writes in the console:
 
@@ -155,4 +157,32 @@ public class TryCatchBlocks {
 
         Process finished with exit code 0
      */
+        System.out.println("------------------");
+        System.out.println("test6 started");
+      /*  System.out.println("test 6 started");
+        System.out.println("Cydeo".substring(2,0)); // we want to get from index 2 to 0; this is exception
+        //we don't know the exception class, so we can use RuntimeException (the parent class of the exception)*/
+
+        try {
+            System.out.println("Cydeo".substring(2,0));
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
+        System.out.println("test 7 started");
+
+        /*
+        writes in the console:
+
+        test6 started
+        test 7 started
+        java.lang.ArrayIndexOutOfBoundsException: Index 200 out of bounds for length 5
+            at day41_ExceptionsIntro.TryCatchBlocks.main(TryCatchBlocks.java:120)
+        java.lang.StringIndexOutOfBoundsException: begin 2, end 0, length 5
+            at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+            at java.base/java.lang.String.substring(String.java:1874)
+            at day41_ExceptionsIntro.TryCatchBlocks.main(TryCatchBlocks.java:167)
+
+        Process finished with exit code 0
+         */
+}
 }
