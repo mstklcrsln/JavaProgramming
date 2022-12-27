@@ -24,10 +24,16 @@ public class Throw_vs_Throws {
         }else {
             System.out.println("E");
         }
-
+     //   method1();
 
     }
 
-
+        public static void method1()  {
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
 
 }
