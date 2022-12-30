@@ -12,6 +12,6 @@ public final class Tesla extends  Car {
     }
 
     public void electricity (){
-        System.out.println(getBrand()+ " " + getModel()+ "uses electricity");
+        System.out.println(getBrand()+ " " + getModel()+ " uses electricity");
     }
 }

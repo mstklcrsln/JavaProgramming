@@ -15,7 +15,7 @@ public class CarShop {
         System.out.println(audi); //Car{brand='Audi', model='Q7', color='White', year=2015, price=30000.0}
 
         Tesla tesla = new Tesla("A3", "Yellow", 2019,45000);
-        tesla.electricity(); //Tesla A3uses electricity
+        tesla.electricity(); //Tesla A3 uses electricity
         System.out.println(tesla);//Car{brand='Tesla', model='A3', color='Yellow', year=2019, price=45000.0}
     }
 }
