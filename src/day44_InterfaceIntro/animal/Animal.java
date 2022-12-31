@@ -1,5 +1,12 @@
 package day44_InterfaceIntro.animal;
+    /* class  Test{
+    public static void main(String[] args) {
 
+        System.out.println(new Test().getClass().getSimpleName()); //Test
+        System.out.println(new Test().getClass().getName()); //day44_InterfaceIntro.animal.Test
+    }
+}
+*/
 public abstract class Animal {
 
     private String name;
@@ -75,8 +82,6 @@ public abstract class Animal {
         System.out.println(name+ " is drinking");
     }
     public abstract void eat();
-
-
 
     public String toString() {
         return getClass().getSimpleName()+ "{" +
