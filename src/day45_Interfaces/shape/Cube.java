@@ -1,8 +1,7 @@
 package day45_Interfaces.shape;
 
-public abstract class Cylinder extends Shape implements Volume {
-
-    public Cylinder(String name) {
+public class Cube extends  Shape implements  Volume {
+    public Cube(String name) {
         super(name);
     }
 

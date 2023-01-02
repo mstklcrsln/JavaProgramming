@@ -1,8 +1,7 @@
 package day45_Interfaces.shape;
 
-public abstract class Cylinder extends Shape implements Volume {
-
-    public Cylinder(String name) {
+public class Rectangle extends Shape {
+    public Rectangle(String name) {
         super(name);
     }
 
@@ -13,11 +12,6 @@ public abstract class Cylinder extends Shape implements Volume {
 
     @Override
     public double perimeter() {
-        return 0;
-    }
-
-    @Override
-    public double volume() {
         return 0;
     }
 }

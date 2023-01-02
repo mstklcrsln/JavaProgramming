@@ -5,7 +5,7 @@ public abstract class Shape {
 
    // public Shape(String name) {
    //     this.name = name;
-    public Shape (){
+    public Shape (String name){
         this.name= getClass().getSimpleName();
     }
     public String getName() {
@@ -17,10 +17,14 @@ public abstract class Shape {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName()+ "{" +
+       /* return getClass().getSimpleName()+ "{" +
                 "name='" + name + '\'' +
                 ", area='" + area() + '\'' +
                 ", perimeter='" + perimeter() + '\'' +
-                '}';
+                '}';*/
+        return
+                "name='" + name + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'';
     }
 }
