@@ -123,5 +123,61 @@ public class Map_Iteration {
         int min = Collections.min(students2.values());
         System.out.println("min = " + min); //min = 101
         System.out.println("max = " + max); //max = 119
+
+
+        // how many student have 110 and upper
+
+        int count= 0;
+
+        for (Integer score : students2.values()) {
+            if (score>110){
+                count++;
+            }
+        }
+        System.out.println("count = " + count); //count = 4
+
+
+        System.out.println("---------------------------");
+
+        //entrySet method
+
+        for (Map.Entry<String, Integer> entry : students2.entrySet()) {
+           /* System.out.println(entry);
+            Ahme=107
+            Adam=119
+            Jaso=117
+            Alex=109
+            Veli=103
+            Mesut=101
+            John=113
+            Jack=111
+            Ali=105
+             */
+          //  System.out.println("entry.getKey() = " + entry.getKey());
+            /*
+            entry.getKey() = Ahme
+            entry.getKey() = Adam
+            entry.getKey() = Jaso
+            entry.getKey() = Alex
+            entry.getKey() = Veli
+            entry.getKey() = Mesut
+            entry.getKey() = John
+            entry.getKey() = Jack
+            entry.getKey() = Ali
+             */
+            System.out.println("entry.getValue() = " + entry.getValue());
+            /*
+            entry.getValue() = 107
+            entry.getValue() = 119
+            entry.getValue() = 117
+            entry.getValue() = 109
+            entry.getValue() = 103
+            entry.getValue() = 101
+            entry.getValue() = 113
+            entry.getValue() = 111
+            entry.getValue() = 105
+             */
+        }
+
     }
 }
