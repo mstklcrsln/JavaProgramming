@@ -16,7 +16,10 @@ public class FrequencyOfCharacters {
         Map<String, Integer> result = new LinkedHashMap<>(); //to get the order we used linkedHashmap
 
         for (String eachCharsOfString : arr) {
-            result.put(eachCharsOfString, Collections.frequency(Arrays.asList(arr), eachCharsOfString));
+            int freq= Collections.frequency(Arrays.asList(arr), eachCharsOfString);
+            result.put(eachCharsOfString,freq);
+
+          //  result.put(eachCharsOfString, Collections.frequency(Arrays.asList(arr), eachCharsOfString));
         }
         System.out.println(result); //{b=2, c=3, a=5}
         /*
