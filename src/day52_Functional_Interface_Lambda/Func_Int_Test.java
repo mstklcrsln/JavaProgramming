@@ -30,10 +30,24 @@ public class Func_Int_Test {
 
         //function 3: create a function that can display the cube of a number
 
-        MyFirstFunctionalInterface cubeOfNumber = (number) -> {
+        MyFirstFunctionalInterface cubeOfNumber = number -> {
             System.out.println(number*number*number);
         };
-
         cubeOfNumber.apply(9); //729
+
+        //function4: create a function that can check if a number is evenly divisible by 5 and 3
+
+        MyFirstFunctionalInterface divisibleBy3And5;
+        divisibleBy3And5 = n -> {
+            if(n%15==0){
+                System.out.println(n+ " is divisible by 3 and 5");
+            }else {
+                System.out.println(n+ " is NOT divisible by 3 and 5");
+            }
+        };
+        divisibleBy3And5.apply(123658940);      // 123658940 is NOT divisible by 3 and 5
+
+
+
     }
 }
