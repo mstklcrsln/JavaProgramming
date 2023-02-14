@@ -17,7 +17,7 @@ public class MarriageProposal {
         if (a.equals("yes") ) {
             System.out.println("Congrats");
         }else {
-            System.out.println("Goog Bye");
+            System.out.println("Good Bye");
         }
 
 

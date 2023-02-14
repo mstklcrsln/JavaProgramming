@@ -20,6 +20,6 @@ public class FreequencyOfCharacter {
            //     frequency+=1; the same as above
             }
         }
-        System.out.println(frequency); // 3 for A
+        System.out.println(ch+ ""+ frequency); // 3 for A
     }
 }

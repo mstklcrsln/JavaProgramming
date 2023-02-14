@@ -4,13 +4,13 @@ public class Finra {
     public static void main(String[] args) {
         for (int i= 1; i<=100; i++){
             if (i%15==0){                               //15,30,45,60
-                System.out.print("FINRA ");
+                System.out.print("FINRA \n");
             } else if (i%3==0) {                       // 3,6,9,12,15,.....,99
-                System.out.print("FIN ");
+                System.out.print("FIN \n");
             }else if (i%5==0) {                         //5,10,15,20......100
-                System.out.print("RA ");
+                System.out.print("RA \n");
             }else {                                         //1,2,4,7,....98
-                System.out.print(i+ " ");
+                System.out.print(i+ " \n");
             }
         }
 

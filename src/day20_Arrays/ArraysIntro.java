@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ArraysIntro {
     public static void main(String[] args) {
-        // create a variable that's capable enouygh to contain 5 names
+        // create a variable that's capable enough to contain 5 names
 
         String  [ ]myGroup= new String[5];  // index numbers 0~4
        //  System.out.println( myGroup);  this is wrong way and gives error  hashcode [Ljava.lang.String;@511baa65

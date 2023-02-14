@@ -12,7 +12,7 @@ public class UniqueCharacterExplaining {
             char ch = str.charAt(j); /* we put j from a to get every single character in string
 
            IMPORTANT :
-            what is outer loop is doing? It is picking the characters and than the inner loop is going to compare that character wits ecah character of string. Than it is matching it is going to increase count  by one.
+            what is outer loop is doing? It is picking the characters and than the inner loop is going to compare that character wits each character of string. Than it is matching it is going to increase count  by one.
             the outer loop gives the characters one by one to inner loop and inner loop compares each character  one by one, if it matches than count will increase by 1 and we find freq
             inner loop compares each character that outer loop picked, which each character of the string
             in the outer loop char ch is j, but in the outer loop ch each is i
@@ -23,15 +23,15 @@ public class UniqueCharacterExplaining {
         how should i get every single characters from the string. By using loop
          */
             int count = 0; /*represents the freq of variable ch. We will put the freq of this char into the variable*/
-            for (int i = 0; i < str.length(); i++) {                /* i is representing the index number starting from zero 0 and it should ended stirng's last index number.
+            for (int i = 0; i < str.length(); i++) {                /* i is representing the index number starting from zero 0 and it should ended string's last index number.
         we can get every single characters by using the i as the index number we can get every single characters from str by calling charAt() method
         This loop we use only to get every single characters from the string*/
                 char each = str.charAt(i); /*This is the loop that we we can get every single characters . And we want to find the freq of char a (the first char)
             after find the freq of a, we need to store it into a variable that we can use at the end. and we create String outside the loop So we create variable  int count.
              Count is zero at the first. but everytime when the character is matching with the character of the string than i need to increase the freq by one.* /
 
-            /*the only time i need to increase the freq is  if char is matchs  the character of string so we use if statement. if ch is matching the first and second character from string that means count will be two 2 */
-                if (each == ch) {  /* if ch is matching the first and second character from string that means count will be two 2 . The inner loop is also going to repeat the if statement. And how many times the statement is true that should be the freq of variable int count. so, we just count how many times this statement will be executed . so that is why in this satement we will give the ncrement*/
+            /*the only time i need to increase the freq is  if char is matches  the character of string so we use if statement. if ch is matching the first and second character from string that means count will be two 2 */
+                if (each == ch) {  /* if ch is matching the first and second character from string that means count will be two 2 . The inner loop is also going to repeat the if statement. And how many times the statement is true that should be the freq of variable int count. so, we just count how many times this statement will be executed . so that is why in this statement we will give the increment*/
                     count++;
                 }
                 /*

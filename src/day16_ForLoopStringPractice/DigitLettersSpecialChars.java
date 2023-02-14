@@ -13,7 +13,7 @@ public class DigitLettersSpecialChars {
         String letters = "";  // for letters
         String specialChars = "";  // for special characters
 
-        // first we get chars frm the string one by one and if its digit we add to the String digit,
+        // first we get chars from the string one by one and if its digit we add to the String digit,
         // if it is letter we add to the String letters, else we will add to specialChar
 
         // for getting every single character from the string

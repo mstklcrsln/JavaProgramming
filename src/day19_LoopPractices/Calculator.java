@@ -12,7 +12,7 @@ public class Calculator {
         System.out.println("Enter a math operator");
         char operator= scan.next().charAt(0);
 
-        if ( ! (operator == '+' || operator=='-')) {  // if the operator is not + or - , not valiid
+        if ( ! (operator == '+' || operator=='-')) {  // if the operator is not + or - , not valid
             System.err.println("ınvalid mat operator: " + operator);
             System.exit(0);         //terminates the all program
         }

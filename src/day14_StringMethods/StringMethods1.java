@@ -33,7 +33,7 @@ public class StringMethods1 {
         int n5= str3.indexOf("a "); // we put a blank after a and it gives the second a's index number ==>3
         System.out.println("n5 = " + n5);
 
-            int n7= str3.indexOf("g");  // gives first g of the line
+        int n7= str3.indexOf("g");  // gives first g of the line
         System.out.println("n6 = " + n7);
 
         int n6= str3.indexOf("amm"); // we want to find 3. a and give some more character to find.

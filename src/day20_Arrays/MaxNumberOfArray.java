@@ -9,7 +9,7 @@ public class MaxNumberOfArray {
         for (int i = 0; i < numbers.length; i++) {
 
             if (numbers[i] >max) { // if there is element in the array that is greater than the current max number
-            max = numbers[i]; // we asiigne the greater number to max
+            max = numbers[i]; // we assign the greater number to max
             }
         }
         System.out.println(max);

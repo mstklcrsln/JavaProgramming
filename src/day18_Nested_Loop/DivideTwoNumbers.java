@@ -8,7 +8,7 @@ public class DivideTwoNumbers {
                 count=0;
 
             while (a >= b) {
-                // after first exection the compiler comes back to the whlle loop and execute again, if condition is  true it will go on, when condition is false it will exit the loop
+                // after first exection the compiler comes back to the while loop and execute again, if condition is  true it will go on, when condition is false it will exit the loop
                                 a -=b;
                 count++;
 
